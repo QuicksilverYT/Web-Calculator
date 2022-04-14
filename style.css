@@ -1,0 +1,99 @@
+/* Main Stuff */
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Body */
+body {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(https://wallpapercave.com/wp/wp4676582.jpg);
+}
+/* Container */
+.container {
+  backdrop-filter: blur(1.5px);
+  position: relative;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 10;
+  border-top: 2.5px solid rgba(255, 255, 255, 0.25);
+  border-left: 2.5px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+}
+/* Calculator */
+.container .calculator {
+  position: relative;
+  display: grid;
+}
+/* Answer */
+.container .calculator .value {
+  user-select: none;
+  background: transparent;
+  font-size: 40px;
+  color: white;
+  text-align: right;
+  grid-column: span 4;
+  height: 125px;
+  width: 300px;
+  padding: 10px;
+  border-top: 2.5px solid rgba(255, 255, 255, 0);
+  border-left: 2.5px solid rgba(255, 255, 255, 0);
+  border-bottom: 2.5px solid rgba(255, 255, 255, 0.25);
+  border-right: 2.5px solid rgba(255, 255, 255, 0.25);
+  outline: none;
+  font-weight: 500;
+}
+/* Span */
+.container .calculator span {
+  user-select: none;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  color: white;
+  height: 75px;
+  width: 75px;
+  font-weight: 500;
+  font-size: 20px;
+  border-bottom: 2.5px solid rgba(255, 255, 255, 0.25);
+  border-right: 2.5px solid rgba(255, 255, 255, 0.25);
+}
+/* Hover */
+.container .calculator span:hover {
+  transition: 0.25s;
+  background: rgba(255, 255, 255, 0.25);
+}
+/* C Button */
+.container .calculator .clear {
+  grid-column: span 2;
+  width: 150px;
+}
+/* = Button */
+.container .calculator .answer {
+  grid-column: span 2;
+  width: 150px;
+}
+/* Footer */
+#footer {
+  width: 100%;
+  height: 55px;
+  position: fixed;
+  bottom: 0px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+/* Views */
+#views {
+  font-size: 30px;
+}
+/* p */
+p {
+  text-align: center;
+}
